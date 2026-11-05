@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AHMAD DOORS | Admin</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body><header class="topbar"><a class="brand" href="index.html">🚪 AHMAD <b>DOORS</b></a><a class="header-order" href="index.html">View Website</a></header>
+<main class="admin-wrap"><div class="admin-header"><div><p class="eyebrow">OWNER CONTROL PANEL</p><h1>Admin Dashboard</h1></div><button id="logout" class="admin-btn secondary hidden">Log out</button></div>
+<div class="panel" id="login-panel"><h2>Owner Login</h2><p class="notice">Only the approved owner email can manage products.</p><div class="field"><label>Email</label><input id="email" type="email" value="killerahmad305@gmail.com" autocomplete="username"></div><div class="field"><label>Password</label><input id="password" type="password" autocomplete="current-password"></div><button id="login" class="admin-btn">Log in</button><p id="login-message" class="notice" aria-live="polite"></p></div>
+<div id="dashboard" class="hidden">
+  <div class="panel"><h2 id="form-title">Add a product</h2><form id="product-form">
+    <input type="hidden" id="product-id">
+    <div class="form-grid">
+      <div class="field"><label>Product name</label><input id="name" required maxlength="100"></div>
+      <div class="field"><label>Category</label><select id="category"><option>PVC Doors</option><option>Fibre Doors</option><option>Wooden Doors</option></select></div>
+      <div class="field"><label>Price (optional)</label><input id="price" placeholder="e.g. Rs. 12,000"></div>
+      <div class="field"><label>Product photo</label><input id="photo" type="file" accept="image/*"></div>
+    </div>
+    <div class="field"><label>Description</label><textarea id="description" maxlength="500"></textarea></div>
+    <div class="admin-actions"><button class="admin-btn" type="submit">Save product</button><button class="admin-btn secondary" type="button" id="cancel-edit">Clear</button></div>
+    <p id="form-message" class="notice" aria-live="polite"></p>
+  </form></div>
+  <div class="panel"><h2>Your products</h2><div id="admin-products">Loading…</div></div>
+</div>
+</main>
+<script src="config.js"></script><script src="admin.js"></script></body></html>

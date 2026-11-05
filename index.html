@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AHMAD DOORS - PVC, fibre and wooden doors. Order on WhatsApp.">
+  <meta name="theme-color" content="#101820">
+  <title>AHMAD DOORS | Quality Doors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">🚪</span><span>AHMAD <b>DOORS</b><small>QUALITY • STYLE • TRUST</small></span></a>
+    <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="header-order" href="https://wa.me/923234842963" target="_blank" rel="noopener">WhatsApp Order</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO AHMAD DOORS</p>
+        <h1>The right door<br><em>for every space.</em></h1>
+        <p class="hero-text">Explore PVC, fibre and wooden doors for your home and workplace. Contact us for designs, sizes and prices.</p>
+        <div class="hero-actions"><a class="button primary" href="#products">Explore Doors</a><a class="button ghost" href="https://wa.me/923234842963" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </div>
+      <div class="hero-art" aria-label="Door illustration"><div class="door-frame"><div class="door"><span class="door-handle"></span><span class="door-panel p1"></span><span class="door-panel p2"></span></div></div><div class="art-caption">AHMAD DOORS <span>EST. QUALITY</span></div></div>
+    </section>
+
+    <section class="category-strip" aria-label="Door categories">
+      <a href="#products" data-filter="PVC Doors"><span>01</span><b>PVC Doors</b><small>Practical & stylish</small></a>
+      <a href="#products" data-filter="Fibre Doors"><span>02</span><b>Fibre Doors</b><small>Strong & elegant</small></a>
+      <a href="#products" data-filter="Wooden Doors"><span>03</span><b>Wooden Doors</b><small>Classic appearance</small></a>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Find your <em>perfect door.</em></h2></div><p>Choose a category to explore available designs.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="All">All Doors</button>
+        <button class="filter" data-filter="PVC Doors">PVC Doors</button>
+        <button class="filter" data-filter="Fibre Doors">Fibre Doors</button>
+        <button class="filter" data-filter="Wooden Doors">Wooden Doors</button>
+      </div>
+      <div id="product-grid" class="product-grid"><div class="loading">Loading collection…</div></div>
+    </section>
+
+    <section class="about" id="about"><div class="about-number">AD<span>01</span></div><div><p class="eyebrow">WHY AHMAD DOORS</p><h2>Doors that make<br><em>a lasting impression.</em></h2><p>We offer PVC, fibre and wooden door options. Contact us to discuss available designs, measurements and pricing.</p><a class="text-link" href="https://wa.me/923234842963" target="_blank" rel="noopener">Talk to our team ↗</a></div></section>
+
+    <section class="contact" id="contact"><div><p class="eyebrow">LET'S TALK</p><h2>Ready to choose<br><em>your next door?</em></h2></div><div class="contact-card"><span>WHATSAPP</span><strong>+92 323 4842963</strong><a class="button primary" href="https://wa.me/923234842963" target="_blank" rel="noopener">Message Us ↗</a></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#">🚪 AHMAD <b>DOORS</b></a><span>© <span id="year"></span> AHMAD DOORS. All rights reserved.</span><a href="admin.html">Admin</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
