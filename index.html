@@ -160,5 +160,33 @@ document.getElementById('ahmad-ai-answer').innerText=a;
 
 <a href="https://wa.me/923234842963" style="display:block;background:#c49a42;color:black;padding:13px;text-align:center;margin-top:20px;text-decoration:none;font-weight:bold">Ask us on WhatsApp</a>
 </section>
-</body>
+</body><style>
+body.light-mode {
+  background:#f5f5f5 !important;
+  color:#171717 !important;
+}
+body.light-mode section,
+body.light-mode .products-section {
+  background:#f5f5f5 !important;
+  color:#171717 !important;
+}
+#theme-toggle {
+  position:fixed;
+  bottom:85px;
+  right:20px;
+  z-index:99999;
+  padding:13px 18px;
+  border:1px solid #c49a42;
+  border-radius:30px;
+  background:#c49a42;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+}
+</style>
+
+<button id="theme-toggle" onclick="
+document.body.classList.toggle('light-mode');
+this.innerText=document.body.classList.contains('light-mode')?'🌙 Dark Mode':'☀️ Light Mode';
+">☀️ Light Mode</button>
 </html>
