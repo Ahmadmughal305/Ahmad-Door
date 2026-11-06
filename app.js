@@ -16,7 +16,7 @@
   document.querySelectorAll("[data-filter]").forEach(el=>el.addEventListener("click",()=>{filter=el.dataset.filter||"All";document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===filter));render();}));
   async function load(){
     if(!window.SUPABASE_URL||!window.SUPABASE_ANON_KEY||!window.supabase){grid.innerHTML='<div class="empty">Website setup error. WhatsApp par rabta karein.</div>';return;}
-    try{const client=window.supabase.createClient(window.SUPABASE_URL,window.SUPABASE_ANON_KEY);const {data,error}=await client.from("products").select("id,name,category,price,description,image_url,active,created_at").eq("active",true).order("created_at",{ascending:false});if(error)throw error;products=data||[];render();}
+    try{const client=window.supabase.createClientclient.rpc("record_site_visit");(window.SUPABASE_URL,window.SUPABASE_ANON_KEY);const {data,error}=await client.from("products").select("id,name,category,price,description,image_url,active,created_at").eq("active",true).order("created_at",{ascending:false});if(error)throw error;products=data||[];render();}
     catch(e){grid.innerHTML='<div class="empty">Products load nahi ho sake. WhatsApp par rabta karein.</div>';console.error(e);}
   } load();
 })();
