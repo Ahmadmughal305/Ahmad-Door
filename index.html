@@ -1,19 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="AHMAD DOORS - PVC, fibre and wooden doors. Order on WhatsApp.">
-<meta name="theme-color" content="#090909"><title>AHMAD DOORS | Quality Doors</title>
+<meta name="theme-color" content="#090909">
+<title>AHMAD DOORS | Quality Doors</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="redesign.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-</head><script async src="https://www.googletagmanager.com/gtag/js?id=G-RTSWWF2QYX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTSWWF2QYX"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
 gtag("config", "G-RTSWWF2QYX");
 </script>
+<style>
+.order-form-section{padding:65px 8%;background:#e9e6de;color:#171717}
+.customer-order-form{max-width:760px;margin:25px auto;background:white;padding:25px}
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.customer-order-form label{display:block;font-weight:bold;margin:12px 0 6px}
+.customer-order-form input,.customer-order-form select,.customer-order-form textarea{width:100%;padding:13px;border:1px solid #ccc;box-sizing:border-box;font:inherit}
+.customer-order-form button{margin-top:20px;border:0;cursor:pointer}
+@media(max-width:600px){.order-grid{grid-template-columns:1fr}.order-form-section{padding:45px 5%}.customer-order-form{padding:16px}}
+</style>
+</head>
 <body>
 <header class="topbar">
 <a class="brand" href="#"><span class="brand-mark">🚪</span><span>AHMAD <b>DOORS</b><small>QUALITY DOORS • BETTER HOMES</small></span></a>
@@ -22,9 +34,16 @@ gtag("config", "G-RTSWWF2QYX");
 </header>
 <main>
 <section class="hero redesign-hero">
-<div class="hero-copy"><p class="eyebrow">STYLISH • DURABLE • AFFORDABLE</p><h1>AHMAD <em>DOORS</em></h1><h2>The Perfect Choice for Your Home</h2>
+<div class="hero-copy">
+<p class="eyebrow">STYLISH • DURABLE • AFFORDABLE</p>
+<h1>AHMAD <em>DOORS</em></h1>
+<h2>The Perfect Choice for Your Home</h2>
 <ul class="hero-points"><li>Premium Quality</li><li>Modern Designs</li><li>Long Lasting</li></ul>
-<div class="hero-actions"><a class="button primary" href="https://wa.me/923234842963" target="_blank" rel="noopener">Order Now on WhatsApp ↗</a><a class="button ghost" href="#products">Explore Collection</a></div></div>
+<div class="hero-actions">
+<a class="button primary" href="https://wa.me/923234842963" target="_blank" rel="noopener">Order Now on WhatsApp ↗</a>
+<a class="button ghost" href="#products">Explore Collection</a>
+</div>
+</div>
 </section>
 <section class="category-strip" aria-label="Door categories">
 <a href="#products" data-filter="PVC Doors"><span>01</span><b>PVC Doors</b><small>Waterproof & Durable</small></a>
@@ -32,12 +51,60 @@ gtag("config", "G-RTSWWF2QYX");
 <a href="#products" data-filter="Fibre Doors"><span>03</span><b>Fibre Doors</b><small>Strong & Stylish</small></a>
 </section>
 <section class="benefit-strip"><span>✓ Best Quality Guaranteed</span><span>➜ Fast Delivery</span><span>☎ Customer Support</span><span>◆ Affordable Prices</span></section>
-<section class="products-section" id="products"><div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Find your <em>perfect door.</em></h2></div><p>Choose a category to explore available designs.</p></div>
-<div class="filters" id="filters"><button class="filter active" data-filter="All">All Doors</button><button class="filter" data-filter="PVC Doors">PVC Doors</button><button class="filter" data-filter="Fibre Doors">Fibre Doors</button><button class="filter" data-filter="Wooden Doors">Wooden Doors</button></div>
-<div id="product-grid" class="product-grid"><div class="loading">Loading collection…</div></div></section>
-<section class="about" id="about"><div class="about-number">AD<span>01</span></div><div><p class="eyebrow">WHY AHMAD DOORS</p><h2>Doors that make<br><em>a lasting impression.</em></h2><p>We provide PVC, wooden and fibre doors with modern designs, strong durability and affordable prices. Your satisfaction is our priority.</p><a class="text-link" href="https://wa.me/923234842963" target="_blank" rel="noopener">Talk to our team ↗</a></div></section>
-<section class="contact" id="contact"><div><p class="eyebrow">LET'S TALK</p><h2>Ready to choose<br><em>your next door?</em></h2></div><div class="contact-card"><span>WHATSAPP</span><strong>+92 323 4842963</strong><a class="button primary" href="https://wa.me/923234842963" target="_blank" rel="noopener">Message Us ↗</a></div></section>
+<section class="products-section" id="products">
+<div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Find your <em>perfect door.</em></h2></div><p>Choose a category to explore available designs.</p></div>
+<div class="filters" id="filters">
+<button class="filter active" data-filter="All">All Doors</button>
+<button class="filter" data-filter="PVC Doors">PVC Doors</button>
+<button class="filter" data-filter="Fibre Doors">Fibre Doors</button>
+<button class="filter" data-filter="Wooden Doors">Wooden Doors</button>
+</div>
+<div id="product-grid" class="product-grid"><div class="loading">Loading collection…</div></div>
+</section>
+
+<section class="order-form-section" id="order">
+<div class="section-heading">
+<div><p class="eyebrow">PLACE YOUR ORDER</p><h2>Order your <em>door.</em></h2></div>
+<p>Details fill karein. Order WhatsApp par bhejein.</p>
+</div>
+<form id="customer-order-form" class="customer-order-form">
+<div class="order-grid">
+<div><label for="order-name">Your name</label><input id="order-name" required maxlength="80" placeholder="Apna naam"></div>
+<div><label for="order-phone">Phone number</label><input id="order-phone" required type="tel" maxlength="25" placeholder="03XXXXXXXXX"></div>
+<div><label for="order-category">Door category</label><select id="order-category" required><option value="">Select category</option><option>PVC Doors</option><option>Fibre Doors</option><option>Wooden Doors</option></select></div>
+<div><label for="order-product">Design / product name</label><input id="order-product" maxlength="100" placeholder="Design ka naam"></div>
+<div><label for="order-quantity">Quantity</label><input id="order-quantity" type="number" min="1" max="100" value="1" required></div>
+<div><label for="order-city">City</label><input id="order-city" required maxlength="80" placeholder="Aapka shehar"></div>
+</div>
+<label for="order-address">Delivery address (optional)</label>
+<input id="order-address" maxlength="200" placeholder="Address">
+<label for="order-notes">Additional details (optional)</label>
+<textarea id="order-notes" maxlength="500" placeholder="Size, colour ya koi aur detail"></textarea>
+<button class="button primary" type="submit">Send Order on WhatsApp ↗</button>
+<p>WhatsApp par bhejne se pehle order details check kar lein.</p>
+</form>
+</section>
+
+<section class="about" id="about">
+<div class="about-number">AD<span>01</span></div>
+<div><p class="eyebrow">WHY AHMAD DOORS</p><h2>Doors that make<br><em>a lasting impression.</em></h2><p>We provide PVC, wooden and fibre doors with modern designs, strong durability and affordable prices. Your satisfaction is our priority.</p><a class="text-link" href="https://wa.me/923234842963" target="_blank" rel="noopener">Talk to our team ↗</a></div>
+</section>
+<section class="contact" id="contact">
+<div><p class="eyebrow">LET'S TALK</p><h2>Ready to choose<br><em>your next door?</em></h2></div>
+<div class="contact-card"><span>WHATSAPP</span><strong>+92 323 4842963</strong><a class="button primary" href="https://wa.me/923234842963" target="_blank" rel="noopener">Message Us ↗</a></div>
+</section>
 </main>
 <footer><a class="brand footer-brand" href="#">🚪 AHMAD <b>DOORS</b></a><span>© <span id="year"></span> AHMAD DOORS. All rights reserved.</span><a href="admin.html">Admin Dashboard</a></footer>
-<script src="config.js"></script><script src="app.js"></script>
-</body></html>
+
+<script>
+document.getElementById("customer-order-form").addEventListener("submit",function(e){
+e.preventDefault();
+const v=id=>document.getElementById(id).value.trim();
+const message="Assalam-o-Alaikum, mujhe AHMAD DOORS se order karna hai.\nName: "+v("order-name")+"\nPhone: "+v("order-phone")+"\nCategory: "+v("order-category")+"\nDesign: "+(v("order-product")||"Not specified")+"\nQuantity: "+v("order-quantity")+"\nCity: "+v("order-city")+"\nAddress: "+(v("order-address")||"Not provided")+"\nDetails: "+(v("order-notes")||"None");
+window.open("https://wa.me/923234842963?text="+encodeURIComponent(message),"_blank");
+});
+</script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
