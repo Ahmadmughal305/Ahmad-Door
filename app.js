@@ -68,9 +68,16 @@
         window.SUPABASE_ANON_KEY
       );
 
-      client.rpc("record_site_visit").then(({ error }) => {
-        if (error) console.error("Visit count error:", error);
-      });
+      const lastVisit = localStorage.getItem("ahmad_last_visit");
+const now = Date.now();
+
+if (!lastVisit || now - Number(lastVisit) >= 86400000) {
+  localStorage.setItem("ahmad_last_visit", String(now));
+
+  client.rpc("record_site_visit").then(({ error }) => {
+    if (error) console.error("Visit count error:", error);
+  });
+}
 
       const { data, error } = await client
         .from("products")
