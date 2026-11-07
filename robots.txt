@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmadmughal305.github.io/Ahmad-Door/sitemap.xml
