@@ -90,4 +90,36 @@ body {
 footer {
   background: #1d2c25;
   color: #eee;
+}/* Premium Product Cards */
+.product-card {
+  background: #fffdf7;
+  border: 1px solid #d8dfd5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(38,58,50,.09);
+  transition: .3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(38,58,50,.16);
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.button,
+.order-small,
+.filter {
+  border-radius: 30px;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.button.primary:hover,
+.header-order:hover {
+  background: #263a32;
+  color: #fff;
 }
