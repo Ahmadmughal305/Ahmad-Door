@@ -120,4 +120,64 @@ footer {
   .topbar nav {
     display: none;
   }
+}/* Restore Original Black & Gold Theme */
+:root {
+  --ink: #080808;
+  --gold: #f2c23e;
+  --paper: #f4f2ee;
+  --muted: #686868;
+}
+
+body {
+  background: #f4f2ee;
+  color: #171717;
+}
+
+.topbar,
+.about,
+.contact,
+.benefit-strip {
+  background: #080808;
+}
+
+.topbar {
+  border-bottom: 2px solid #bd8e16;
+}
+
+.brand small,
+.eyebrow,
+.product-category,
+.category-strip span {
+  color: #f2c23e;
+}
+
+.header-order,
+.button.primary {
+  background: #f2c23e;
+  color: #080808;
+}
+
+.category-strip {
+  background: #fff;
+}
+
+.category-strip a {
+  background: #171717;
+  color: white;
+}
+
+.filter.active,
+.filter:hover,
+.order-small {
+  background: #080808;
+  color: #f2c23e;
+}
+
+.contact {
+  border-top: 2px solid #f2c23e;
+}
+
+footer {
+  background: #050505;
+  color: #bbb;
 }
