@@ -188,5 +188,21 @@ body.light-mode .products-section {
 <button id="theme-toggle" onclick="
 document.body.classList.toggle('light-mode');
 this.innerText=document.body.classList.contains('light-mode')?'🌙 Dark Mode':'☀️ Light Mode';
-">☀️ Light Mode</button>
+">☀️ Light Mode</button><section id="reviews" style="background:#111;color:white;padding:35px 6%;text-align:center">
+<h2 style="color:#c49a42">⭐ Customer Reviews</h2>
+<p>Apna experience aur rating share karein.</p>
+
+<form onsubmit="event.preventDefault();let n=document.getElementById('review-name').value;let r=document.getElementById('review-rating').value;let m=document.getElementById('review-message').value;window.open('https://wa.me/923234842963?text='+encodeURIComponent('AHMAD DOORS Review%0AName: '+n+'%0ARating: '+r+' stars%0AReview: '+m),'_blank')">
+<input id="review-name" required placeholder="Your name" style="padding:12px;width:90%;margin:8px">
+<select id="review-rating" style="padding:12px;width:90%;margin:8px">
+<option value="5">⭐⭐⭐⭐⭐ 5 Stars</option>
+<option value="4">⭐⭐⭐⭐ 4 Stars</option>
+<option value="3">⭐⭐⭐ 3 Stars</option>
+<option value="2">⭐⭐ 2 Stars</option>
+<option value="1">⭐ 1 Star</option>
+</select>
+<textarea id="review-message" required placeholder="Write your review..." style="padding:12px;width:90%;margin:8px"></textarea>
+<button type="submit" style="padding:13px 25px;background:#c49a42;border:0;font-weight:bold">Submit Review</button>
+</form>
+</section>
 </html>
