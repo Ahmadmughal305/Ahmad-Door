@@ -27,3 +27,67 @@ body{background:var(--paper);color:#171717}
 .contact{background:#080808;border-top:2px solid var(--gold)}.contact-card{border:1px solid #8d6b1d;border-radius:12px}.contact-card strong{color:#fff}
 footer{background:#050505;color:#bbb}.footer-brand{color:#fff}
 @media(max-width:760px){.topbar{padding:12px 4vw}.topbar nav{display:none}.redesign-hero{min-height:470px;padding:42px 7vw;background-position:58% center}.redesign-hero:before{background:linear-gradient(90deg,rgba(0,0,0,.93),rgba(0,0,0,.62) 68%,rgba(0,0,0,.25))}.category-strip{padding:12px 4vw;gap:8px}.category-strip a{padding:15px 9px;min-height:100px}.category-strip b{font-size:11px}.category-strip small{font-size:9px}.benefit-strip{justify-content:flex-start;font-size:11px}.products-section{padding:55px 5vw}}
+/* Premium Sage Green Theme */
+:root {
+  --ink: #263a32;
+  --gold: #b58b61;
+  --paper: #f5f2ea;
+  --muted: #68766e;
+}
+
+body {
+  background: #f5f2ea;
+  color: #263a32;
+}
+
+.topbar,
+.about,
+.contact,
+.benefit-strip {
+  background: #263a32;
+}
+
+.topbar {
+  border-bottom: 2px solid #b58b61;
+}
+
+.brand small,
+.eyebrow,
+.product-category,
+.category-strip span {
+  color: #b58b61;
+}
+
+.header-order,
+.button.primary {
+  background: #b58b61;
+  color: #fff;
+}
+
+.category-strip {
+  background: #e9e7dd;
+}
+
+.category-strip a {
+  background: #344b40;
+}
+
+.filter.active,
+.filter:hover,
+.order-small {
+  background: #263a32;
+  color: white;
+}
+
+.product-card {
+  border: 1px solid #dedbd1;
+}
+
+.contact {
+  border-top: 2px solid #b58b61;
+}
+
+footer {
+  background: #1d2c25;
+  color: #eee;
+}
