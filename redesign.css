@@ -180,4 +180,43 @@ body {
 footer {
   background: #050505;
   color: #bbb;
+}/* Door Category Boxes Fix */
+.category-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 20px 5%;
+}
+
+.category-strip a {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  min-width: 0;
+  min-height: 115px;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.category-strip span {
+  grid-row: span 2;
+}
+
+.category-strip b,
+.category-strip small {
+  overflow-wrap: anywhere;
+}
+
+@media(max-width: 600px) {
+  .category-strip {
+    grid-template-columns: 1fr;
+    padding: 16px 5%;
+    gap: 10px;
+  }
+
+  .category-strip a {
+    min-height: 85px;
+    padding: 15px 18px;
+  }
 }
