@@ -90,4 +90,34 @@ body {
 footer {
   background: #1d2c25;
   color: #eee;
+}/* Header layout fix */
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 18px;
+}
+
+.brand,
+.header-order {
+  flex-shrink: 0;
+}
+
+.header-order {
+  white-space: nowrap;
+}
+
+@media(max-width: 900px) {
+  .topbar nav {
+    display: none;
+  }
 }
