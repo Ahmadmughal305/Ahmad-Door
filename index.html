@@ -125,7 +125,7 @@ document.getElementById("customer-order-form").addEventListener("submit",functio
 e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
 const message="Assalam-o-Alaikum, mujhe AHMAD DOORS se order karna hai.\nName: "+v("order-name")+"\nPhone: "+v("order-phone")+"\nCategory: "+v("order-category")+"\nDesign: "+(v("order-product")||"Not specified")+"\nQuantity: "+v("order-quantity")+"\nCity: "+v("order-city")+"\nAddress: "+(v("order-address")||"Not provided")+"\nDetails: "+(v("order-notes")||"None");
-window.open("https://wa.me/923234842963?text="+encodeURIComponent(message),"_blank");
+window.location.href="https://wa.me/923234842963?text="+encodeURIComponent(message);
 });
 </script>
 <script src="config.js"></script>
